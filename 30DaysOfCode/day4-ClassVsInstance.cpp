@@ -32,20 +32,18 @@ void Person::yearPasses(){
 }
 
 int main(){
-    int t;
     int age;
-    std::cin >> t;
-    for(int i=0; i < t; i++) {
-        std::cin >> age;
-        Person p(age);
-        p.amIOld();
-        for(int j=0; j < 3; j++) {
-            p.yearPasses();
-        }
-        p.amIOld();
-
-        std::cout << std::endl;
+    std::cin >> age;
+    Person p(age);
+    p.amIOld();
+    
+    for(int j=0; j < 3; j++) {
+        p.yearPasses();
     }
+    
+    p.amIOld();
+
+    std::cout << std::endl;
 
     return 0;
 }
